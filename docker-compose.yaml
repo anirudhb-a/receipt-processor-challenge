@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    # If you want to mount your local code into the container (useful for dev):
+    # volumes:
+    #   - .:/app
+    #   - /app/__pycache__
+    # environment:  # (Optional) Pass in environment variables if needed
+    #   - FLASK_ENV=development
+    #   - CUSTOM_VARIABLE=foobar
